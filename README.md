@@ -1,2 +1,0 @@
-# Yogwithshilpa.github.io
-website
