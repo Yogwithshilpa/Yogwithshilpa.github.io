@@ -84,7 +84,7 @@ button {
   text-align: center;
   position: absolute;
   top: 40%;
-  left: 30%;
+  left: 35%;
 }
 
 .bannerdescription {
@@ -225,7 +225,7 @@ button {
 /* What our clients say Start */
 .client {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-color: black;
   position: relative;
   margin-top: 15%;
@@ -348,7 +348,7 @@ button {
 }
 
 .auntyinfo .auntyinfoleft p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.7;
   font-style: italic;
   color: #000002;
