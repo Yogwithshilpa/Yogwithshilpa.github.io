@@ -1,0 +1,724 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NavBar Start */
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url(../images/Banner_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5% 10%;
+}
+
+.logo {
+  cursor: pointer;
+  height: 100px;
+  width: 70px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+.nav__links li a:hover {
+  color: #f39313;
+}
+
+.nav__social {
+  list-style: none;
+  display: flex;
+}
+
+.nav__social a {
+  font-size: 22px;
+  padding: 0 10px;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+.nav__social a:hover {
+  color: #f39313;
+}
+
+.bannertext {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+.bannerdescription {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.9;
+  position: absolute;
+  width: 30%;
+  text-align: center;
+  top: 53%;
+  left: 35%;
+}
+/* Navbar End */
+
+/* What’s in it for you? Start */
+.whats {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 0;
+}
+
+.whats .whatsright {
+  width: 50%;
+  position: relative;
+}
+
+.whats .whatsright .group-1 {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.whats .whatsright .image-2 {
+  height: 350px;
+  width: 350px;
+  top: 5%;
+  left: 20%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.whats .whatsright .image-3 {
+  height: 200px;
+  width: 200px;
+  top: 55%;
+  left: 57%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.whats .whatsright .image-4 {
+  height: 150px;
+  width: 150px;
+  top: 80%;
+  left: 40%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.whats .whatsright .image-5 {
+  height: 200px;
+  width: 200px;
+  top: 65%;
+  left: 12%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.whats .whatsleft {
+  width: 50%;
+  height: auto;
+}
+
+.whats .whatsleft .title h2 {
+  font-size: 36px;
+  position: relative;
+  color: #564e4e;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.whats .whatsleft .title h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -80%;
+  width: 10%;
+  height: 1px;
+  background-color: #bababa;
+}
+
+.whats .whatsleft .text {
+  position: relative;
+  top: 15%;
+}
+
+.whats .whatsleft .text p {
+  font-size: 18px;
+  color: #564e4e;
+  font-weight: 600;
+  width: 80%;
+  line-height: 1.9;
+  font-family: "Poppins", sans-serif;
+}
+
+.whats .whatsleft .connect {
+  position: relative;
+  top: 20%;
+  font-size: 18px;
+  color: #564e4e;
+  font-family: "Poppins", sans-serif;
+}
+
+.whats .whatsleft .connect h3 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.9;
+}
+
+.whats .whatsleft .connect ul {
+  width: 75%;
+  font-size: 18px;
+  line-height: 1.9;
+  font-weight: 300;
+  position: absolute;
+  left: 5%;
+}
+
+.whats .whatsleft .connect ul li{
+  color: #564e4e;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* What’s in it for you? End */
+
+/* What our clients say Start */
+.client {
+  width: 100%;
+  height: 110vh;
+  background-color: black;
+  position: relative;
+  margin-top: 15%;
+  font-family: "Poppins", sans-serif;
+}
+
+.client .info {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 400;
+  color: white;
+  left: 40%;
+  top: 10%;
+}
+
+.client .info::before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 1px;
+  position: absolute;
+  background-color: white;
+  left: -90%;
+  top: 50%;
+}
+
+.client .info::after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 1px;
+  position: absolute;
+  background-color: white;
+  left: 120%;
+  top: 50%;
+}
+
+.swiper {
+  width: 90%;
+  height: 70%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  background: none;
+}
+
+.swiper-slide p {
+  font-size: 15px;
+  color: #f6f6f6;
+  line-height: 1.9;
+  width: 80%;
+}
+
+.swiper-slide .user {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.swiper-slide .user img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  top: 30px;
+}
+
+.swiper-slide .userinfo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: #f6f6f6;
+  top: 30px;
+  left: 15%;
+  font-weight: normal;
+}
+
+.swiper-slide .userinfo h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.swiper-slide .userinfo h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -1%;
+  z-index: 1;
+}
+
+.swiper-pagination-bullet {
+  background-color: #f39313;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f39313;
+}
+/* What our clients say End */
+
+/* Aunty Start */
+.auntyinfo {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0;
+}
+
+.auntyinfo .auntyinfoleft {
+  background-color: #f9f9f9;
+  width: 55%;
+  height: 50vh;
+  margin-top: 5%;
+  position: relative;
+}
+
+.auntyinfo .auntyinfoleft p {
+  font-size: 18px;
+  line-height: 1.7;
+  font-style: italic;
+  color: #000002;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.auntyinfo .auntyinfoleft p::before {
+  content: "\201C";
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  top: -10px;
+  left: -40px;
+}
+
+.auntyinfo .auntyinfoleft p::after {
+  content: "\201D";
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  bottom: -20px;
+  right: -20px;
+}
+.auntyinfo .auntyinfoleft h3 {
+  font-size: 20px;
+  color: #292929;
+  font-weight: 600;
+  position: absolute;
+  top: 80%;
+  left: 15%;
+}
+
+.auntyinfo .auntyinforight {
+  width: 45%;
+  height: 50vh;
+  position: relative;
+}
+
+.auntyinfo .auntyinforight .smallcircle {
+  position: absolute;
+  top: 25%;
+  left: 24%;
+}
+
+.auntyinfo .auntyinforight .auntyimg {
+  width: 325px;
+  height: 325px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+}
+
+.auntyinfo .auntyinforight .bigcircle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 24%;
+  left: 33%;
+}
+/* Aunty End*/
+
+/* Certified by Start */
+.certified {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  margin-top: 8%;
+}
+
+.certified .info {
+  position: absolute;
+  font-size: 34px;
+  font-weight: 400;
+  color: #4b4b4b;
+  left: 45%;
+  top: 15%;
+}
+
+.certified .info::before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 1px;
+  position: absolute;
+  background-color: #e8e8e8;
+  left: -150%;
+  top: 50%;
+}
+
+.certified .info::after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 1px;
+  position: absolute;
+  background-color: #e8e8e8;
+  left: 120%;
+  top: 50%;
+}
+
+.certified .creds {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+}
+.cred {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 3;
+  padding: 7px 28px;
+  border: 1.5px solid #f39313;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+/* Certified by End */
+
+/* Extrainfo Start*/
+.extrainfo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.extrainfo .extrainfoleft {
+  width: 45%;
+  height: 50vh;
+  position: relative;
+}
+
+.extrainfo .extrainfoleft .smallcircle {
+  position: absolute;
+  top: 25%;
+  left: 24%;
+}
+
+.extrainfo .extrainfoleft .extraimg {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+}
+
+.extrainfo .extrainfoleft .bigcircle {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.extrainfo .extrainforight {
+  width: 55%;
+  height: 30vh;
+  margin-top: 5%;
+  position: relative;
+  background-color: #f9f9f9;
+}
+
+.extrainfo .extrainforight p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: #000002;
+  width: 65%;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+.extrainfo .extrainforight p::before {
+  content: "\201C";
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  top: -30px;
+  left: -40px;
+}
+
+.extrainfo .extrainforight p::after {
+  content: "\201D";
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  bottom: -30px;
+  right: -60px;
+}
+/* Extrainfo End */
+
+/* Gallary Start */
+.gallary {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.gallary .title {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 400;
+  color: #4b4b4b;
+  left: 45%;
+  top: 7%;
+}
+
+.gallary .title::before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 1px;
+  position: absolute;
+  background-color: #e8e8e8;
+  left: -250%;
+  top: 50%;
+}
+
+.gallary .title::after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 1px;
+  position: absolute;
+  background-color: #e8e8e8;
+  left: 150%;
+  top: 50%;
+}
+
+.gallary .grid {
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.gallary .grid img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+/*
+.gallary .grid img:hover {
+   transform: scale(1.25); 
+   transition: 0.5s ease-out;
+}
+*/
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-image-container:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: transform 7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Gallary End */
+
+/* Footer Start */
+.footer {
+  background: #000;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-subhead {
+  font-size: 18px;
+  color: #fadcd9;
+}
+
+.footer-col-ele {
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.text-col-2 {
+  margin-left: 30px;
+}
+
+/* Footer End */
+
+@media screen and (max-width: 1362px) {
+  .gallary .grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  }
+  .gallary .grid img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .gallary .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+  }
+  .gallary .grid img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .banner {
+    background-image: url(../images/Mobile_screen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .nav__content {
+    display: none;
+  }
+  .bannertext {
+    display: none;
+  }
+  .bannerdescription {
+    display: none;
+  }
+
+  .whats {
+    display: none;
+  }
+
+  .client {
+    display: none;
+  }
+
+  .auntyinfo {
+    display: none;
+  }
+
+  .certified {
+    display: none;
+  }
+
+  .extrainfo {
+    display: none;
+  }
+
+  .gallary {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+}
