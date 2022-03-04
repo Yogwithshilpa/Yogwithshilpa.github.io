@@ -190,15 +190,6 @@ button {
   color: #f39313;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 10%;
-}
-.swiper-pagination-bullet-active {
-  background-color: #f39313;
-}
 /* Join Us End */
 
 /* Let's Talk Strat*/
@@ -467,6 +458,11 @@ button {
     font-size: 14px;
   }
 
+  .letstalk .letstalkright .image{
+    width: 325px;
+    height: 325px;
+  }
+
   .vision {
     height: 60vh;
   }
@@ -478,6 +474,14 @@ button {
 
 
 @media screen and (max-width: 999px) {
+  .bannertext{
+    left: 28%;
+  }
+  .bannerdescription{
+    width: 40%;
+    left: 30%;
+  }
+
   .client .info{
     left: 40%;
   }
@@ -490,62 +494,322 @@ button {
     left: 120%;
   }
 
-  .letstalk{
-    display: none;
+  .letstalk .letstalkleft .title h2{ 
+    font-size: 28px;
+  }
+  .letstalk .letstalkleft .text p{ 
+    font-size: 14px;
+  }
+  .letstalk .letstalkleft .socials .handle a{ 
+    font-size: 14px;
   }
 
+  .letstalk .letstalkright{
+    margin-left: -5%;
+  }
+  .letstalk .letstalkright .group-1 {
+    right: -10%;
+  }
+  .letstalk .letstalkright .image{
+    width: 300px;
+    height: 300px;
+  }
+  .letstalk .letstalkright .bigcircle{
+    top: 25%;
+    left: 35%;
+  }
+
+  .vision .client{
+    margin-top: -5%;
+  }
   .vision .text{
     top: 40%;
+    font-size: 14px;
+  }
+  .vision .client .info{
+    left: 42%;
   }
   .vision .client .info::before{
-    width: 150px;
+    width: 120px;
     left: -150%;
   }
   .vision .client .info::after{
-    width: 150px;
+    width: 120px;
     left: 120%;
+  }
+
+  .footer {
+    margin-top: 20%;
+  }
+  .footer .text{
+    font-size: 16px;
+  }
+  .footer-subhead {
+    font-size: 16px;
+  }
+  .footer-col-ele {
+    font-size: 13px;
   }
 }
 
-/* Temporary */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 999px) {
-
-  .banner{
-    background-image: url(../images/Mobile_screen.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-  }
-
-  .nav__content{
-    display: none;
-  }
   .bannertext{
-    display: none;
+    font-size: 32px;
+    left: 25%;
   }
   .bannerdescription{
-    display: none;
+    width: 50%;
+    left: 27%;
+  }
+
+  .letstalk{
+    margin-top: 10%;
+  }
+  
+  .letstalk .letstalkright .image{
+    width: 250px;
+    height: 250px;
+    top: 15%;
+  }
+  .letstalk .letstalkright .bigcircle{
+    width: 200px;
+    top: 25%;
+    left: 40%;
+  }
+
+  .swiper-slide h3 {
+    font-size: 16px;
+    top: 15%;
+  }
+
+  .swiper-slide p {
+    font-size: 14px;
+    top: 20%;
+  }
+
+  .vision .text{
+    width: 70%;
+    left: 15%;
+  }
+  
+  .footer {
+    margin-top: 22%;
+  }
+  .footer .text{
+    font-size: 14px;
+  }
+  .footer-subhead {
+    font-size: 14px;
+  }
+
+  .footer-col-ele {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  li,
+  a,
+  button {
+    font-size: 14px;
+  }
+  .nav__links li {
+    padding: 0 10px;
+  }
+  .nav__social a {
+    font-size: 18px;
+    padding: 0 5px;
+  }  
+  .bannertext{
+    left: 22%;
   }
 
   .client{
-    display: none;
+    height: 60vh;
+  }
+  .client .info{
+    left: 35%;
+  }
+  .client .info::before{
+    width: 100px;
+    left: -80%;
+  }
+  .client .info::after{
+    width: 100px;
+  }
+
+  .letstalk .letstalkright{
+    margin-left: -10%;
+  }
+
+  .swiper-slide h3 {
+    font-size: 16px;
+    top: 25%;
+  }
+  .swiper-slide p {
+    font-size: 14px;
+    top: 35%;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 5%;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #f39313;
+  }
+
+  .vision .client{
+    margin-top: 5%;
+  }
+  .vision .text{
+    top: 30%;
+  }
+
+  .footer {
+    margin-top: 25%;
+  }  
+}
+
+@media screen and (max-width: 600px) {
+  .client{
+    height: 70vh;
+  }
+
+  .letstalk{
+    margin-top: 20%;
+  }
+
+  .vision .client{
+    margin-top: 10%;
   }
   
+  .footer {
+    margin-top: 30%;
+  }  
+}
+
+@media screen and (max-width: 560px) {
+  .bannertext{
+    left: 18%;
+  }
+
+  .client .info{
+    font-size: 28px;
+    left: 30%;
+  }
+  .client .info::before{
+    width: 80px;
+    left: -60%;
+  }
+  .client .info::after{
+    width: 80px;
+    left: 110%;
+  }
+
   .letstalk{
-    display: none;
+    flex-direction: column;
+  }
+
+  .letstalk .letstalkleft{
+    width: 100%;
+  }
+  .letstalk .letstalkleft .letstalkleftcontent{
+    width: 80%;
+  }
+
+  .letstalk .letstalkright{
+    width: 100%;
+    height: 40vh;
+    margin-top: 10%;
+  }
+  .letstalk .letstalkright .smallcircle{
+    top: 0;
+    left: 30%;
+  }
+  .letstalk .letstalkright .image{
+    top: -5%;
+    left: 31%;
+  }
+  .letstalk .letstalkright .bigcircle{
+    top: 8%;
+    left: 45%;
+  }
+
+  .footer .text{
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer-subhead {
+    font-size: 12px;
+  }
+  .footer-col-ele {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .nav__links li {
+    padding: 5px 80px;
+  }
+  .nav__social a {
+    padding: 0 5px;
+  }
+
+  .bannertext{
+    font-size: 28px;
+    left: 15%;
+  }
+  .bannerdescription{
+    top: 50%;
+  }
+
+  .letstalk .letstalkright{
+    margin-top: 15%;
   }
 
   .vision{
-    display: none;
+    height: 70vh;
+  }
+
+  .footer .logo{
+    width: 50px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav__links li {
+    padding: 5px 40px;
+  }
+  .bannertext{
+    font-size: 24px;
+  }
+
+  .letstalk .letstalkleft .socials .handle a {
+    font-size: 12px;
+  }
+
+  .vision .client .info::before{
+    width: 80px;
+    left: -120%;
+  }
+  .vision .client .info::after{
+    width: 80px;
+    left: 120%;
   }
 
   .footer{
-    display: none;
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer{
+    margin-top: 55%;
   }
 }
 /* Responsive End */
