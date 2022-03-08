@@ -63,7 +63,6 @@ button {
 
 .nav__social {
   list-style: none;
-  display: flex;
 }
 
 .nav__social a {
@@ -215,7 +214,7 @@ button {
   left: 5%;
 }
 
-.whats .whatsleft .connect ul li{
+.whats .whatsleft .connect ul li {
   color: #564e4e;
   font-size: 18px;
   font-weight: 300;
@@ -225,7 +224,7 @@ button {
 /* What our clients say Start */
 .client {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-color: black;
   position: relative;
   margin-top: 15%;
@@ -303,7 +302,7 @@ button {
   position: absolute;
   color: #f6f6f6;
   top: 30px;
-  left: 15%;
+  left: 20%;
   font-weight: normal;
 }
 
@@ -320,7 +319,7 @@ button {
 
 .swiper-horizontal > .swiper-pagination-bullets {
   bottom: -1%;
-  z-index: 1;
+  z-index: 1 !important;
 }
 
 .swiper-pagination-bullet {
@@ -605,7 +604,7 @@ button {
 }
 /*
 .gallary .grid img:hover {
-   transform: scale(1.25); 
+   transform: scale(1.25);
    transition: 0.5s ease-out;
 }
 */
@@ -649,8 +648,30 @@ button {
 .text-col-2 {
   margin-left: 30px;
 }
-
 /* Footer End */
+
+/* Responsive Start*/
+@media screen and (max-width: 1500px) {
+  .bannertext {
+    font-size: 42px;
+  }
+  .bannerdescription {
+    font-size: 16px;
+  }
+
+  .swiper-slide p {
+    line-height: 1.7;
+  }
+
+  .auntyinfo .auntyinfoleft h3{
+    top: 85%;
+  }
+
+  .footer{
+    margin-top: 5%;
+  }
+
+}
 
 @media screen and (max-width: 1362px) {
   .gallary .grid {
@@ -660,9 +681,81 @@ button {
     width: 300px;
     height: 200px;
   }
+
+  .swiper-slide p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .bannertext {
+    font-size: 40px;
+    left: 30%;
+  }
+  .bannerdescription {
+    left: 33%;
+  }
+
+  .auntyinfo .auntyinfoleft p{
+    font-size: 16px;
+  }
+  .auntyinfo .auntyinfoleft h3{
+    top: 80%;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .bannertext {
+    font-size: 36px;
+  }
+  .bannerdescription {
+    font-size: 14px;
+  }
+
+  .swiper-slide p {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1175px) {
+
+  .client .info{
+    top: 8%;
+    left: 35%;
+  }
+  .client .info::before{
+    width: 180px;
+    left: -70%;
+  }
+  .client .info::after{
+    width: 180px;
+  }
+  .swiper{
+    left: 8%;
+    top: 20%;
+  }  
+  .swiper-horizontal > .swiper-pagination-bullets {
+    bottom: -1%;
+  }
+
+  .auntyinfo .auntyinforight .smallcircle {
+    top: 23%;
+    left: 23%;
+  }  
+  .auntyinfo .auntyinforight .auntyimg {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 25%;
+  }
+  .auntyinfo .auntyinforight .bigcircle {
+    width: 250px;
+    height: 250px;
+    top: 30%;
+    left: 35%;
+  }
+
+
   .gallary .grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
   }
@@ -670,42 +763,385 @@ button {
     width: 250px;
     height: 200px;
   }
-  .auntyinfo .auntyinfoleft p {
-    font-size: 16px;
+}
+
+@media screen and (max-width: 1080px) {
+  .swiper-slide p {
+    width: 90%;
   }
+  
+  .auntyinfo .auntyinfoleft p{
+    font-size: 15px;
+  }
+  .auntyinfo .auntyinfoleft h3{
+    font-size: 18px;
+  }
+
 }
 
 @media screen and (max-width: 999px) {
-  .banner {
-    background-image: url(../images/Mobile_screen.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
+  .bannertext{
+    left: 28%;
+  }
+  .bannerdescription{
+    width: 40%;
+    left: 30%;
   }
 
-  .nav__content {
-    display: none;
+  .client{
+    height: 120vh;
   }
-  .bannertext {
-    display: none;
-  }
-  .bannerdescription {
-    display: none;
+  .client .info{
+    left: 32%;
+    font-size: 32px;
   }
 
+  .swiper-slide .userinfo h2{
+    font-size: 16px;
+  }
+  .swiper-slide .userinfo h3{
+    font-size: 13px;
+  }
+  .swiper-slide .user img {
+    width: 40px;
+    height: 40px;
+    top: 25px;
+  }
+  .swiper-slide .userinfo {
+    top: 20px;
+  }
+
+  .auntyinfo .auntyinfoleft h3{
+    top: 85%;
+  }
+  .auntyinfo .auntyinforight .smallcircle {
+    top: 25%;
+    left: 24%;
+  }
+  
+  .auntyinfo .auntyinforight .auntyimg {
+    width: 280px;
+    height: 280px;
+    top: 10%;
+    left: 25%;
+  }
+  
+  .auntyinfo .auntyinforight .bigcircle {
+    width: 240px;
+    height: 240px;
+    top: 24%;
+    left: 33%;
+  }
+  
+  .footer {
+    margin-top: 20%;
+  }
+  .footer .text{
+    font-size: 16px;
+  }
+  .footer-subhead {
+    font-size: 16px;
+  }
+  .footer-col-ele {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  
+  .client .info::before {
+    width: 150px;
+    height: 1px;
+    left: -70%;
+    top: 50%;
+  }
+  .client .info::after {
+    width: 150px;
+    left: 120%;
+    top: 50%;
+  }
+
+  .auntyinfo .auntyinfoleft{
+    height: 60vh;
+  }
+  .auntyinfo .auntyinforight{
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .bannertext{
+    left: 25%;
+  }
+
+  .client{
+    height: 130vh;
+  }
+  .client .info::before{
+    width: 120px;
+    left: -50%;
+  }
+  .client .info::after{
+    width: 120px;
+    left: 110%;
+  }
+  
+  .auntyinfo .auntyinforight .smallcircle {
+    top: 25%;
+    left: 20%;
+  }
+  
+  .auntyinfo .auntyinforight .auntyimg {
+    width: 260px;
+    height: 260px;
+    top: 10%;
+    left: 21%;
+  }
+  
+  .auntyinfo .auntyinforight .bigcircle {
+    width: 230px;
+    height: 230px;
+    top: 24%;
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .client{
+    height: 140vh;
+  }
+  .swiper{
+    height: 75%;
+  }
+
+  .auntyinfo .auntyinfoleft p{
+    font-size: 14px;
+  }
+  .auntyinfo .auntyinforight .smallcircle {
+    top: 30%;
+    left: 10%;
+  } 
+  .auntyinfo .auntyinforight .auntyimg {
+    width: 250px;
+    height: 250px;
+    top: 22%;
+    left: 15%;
+  }
+  .auntyinfo .auntyinforight .bigcircle {
+    width: 200px;
+    height: 200px;
+    top: 35%;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .bannertext{
+    font-size: 32px;
+    left: 25%;
+  }
+  .bannerdescription{
+    width: 50%;
+    left: 27%;
+  }
+
+  .client{
+    height: 80vh;
+  }
+  .client .info{
+    font-size: 28px;
+  }
+  .client .info::before{
+    width: 100px;
+    left: -50%;
+  }
+  .client .info::after{
+    width: 100px;
+  }
+  .swiper{
+    top: 25%;
+    height: 70%;
+  }
+  .swiper-slide .user img {
+    width: 50px;
+    height: 50px;
+    top: 30px;
+  }
+  .swiper-slide .userinfo {
+    top: 30px;
+    left: 10%;
+  }
+
+  .footer {
+    margin-top: 22%;
+  }
+  .footer .text{
+    font-size: 14px;
+  }
+  .footer-subhead {
+    font-size: 14px;
+  }
+
+  .footer-col-ele {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 685px) {
+  li,
+  a,
+  button {
+    font-size: 14px;
+  }
+  .nav__links li {
+    padding: 0 10px;
+  }
+  .nav__social a {
+    font-size: 18px;
+    padding: 0 10px;
+  }  
+  .bannertext{
+    left: 20%;
+  }
+
+  .auntyinfo{
+    flex-direction: column-reverse;
+  }
+  .auntyinfo .auntyinfoleft{
+    width: 80%;
+  }
+  .auntyinfo .auntyinfoleft p{
+    font-size: 16px;
+  }
+  .auntyinfo .auntyinforight{
+    height: 50vh;
+    margin-left: 25%;
+  }
+  .auntyinfo .auntyinforight .smallcircle {
+    top: 20%;
+    left: 10%;
+  }
+  .auntyinfo .auntyinforight .auntyimg {
+    width: 250px;
+    height: 250px;
+    top: 15%;
+    left: 15%;
+  }
+  .auntyinfo .auntyinforight .bigcircle {
+    width: 200px;
+    height: 200px;
+    top: 35%;
+    left: 35%;
+  }
+
+
+  .footer {
+    margin-top: 25%;
+  }  
+}
+
+@media screen and (max-width: 630px) {
+  .client .info{
+    font-size: 24px;
+    left: 28%;
+  }
+  .client .info::before{
+    width: 80px;
+    left: -45%;
+  }
+  .client .info::after{
+    width: 80px;
+  }
+
+  .auntyinfo .auntyinfoleft p{
+    font-size: 15px;
+  }
+
+  .footer {
+    margin-top: 30%;
+  }  
+}
+
+@media screen and (max-width: 560px) {
+  .bannertext{
+    left: 18%;
+  }
+
+  .footer .text{
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer-subhead {
+    font-size: 12px;
+  }
+  .footer-col-ele {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .nav__links li {
+    padding: 5px 80px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .nav__links li {
+    padding: 5px 80px;
+  }
+  .nav__social a {
+    padding: 0 5px;
+  }
+
+  .bannertext{
+    font-size: 28px;
+    left: 18%;
+  }
+  .bannerdescription{
+    top: 50%;
+  }
+
+  .footer .logo{
+    width: 50px;
+    height: 80px;
+  }
+  .footer .text{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bannertext{
+    left: 12%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav__links li {
+    padding: 5px 40px;
+  }
+  .bannertext{
+    font-size: 24px;
+  }
+
+  .footer{
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer{
+    margin-top: 55%;
+  }
+}
+
+
+
+/* Temp */
+@media screen and (max-width: 999px) {
   .whats {
-    display: none;
-  }
-
-  .client {
-    display: none;
-  }
-
-  .auntyinfo {
     display: none;
   }
 
@@ -721,7 +1157,6 @@ button {
     display: none;
   }
 
-  .footer {
-    display: none;
-  }
 }
+
+/* Temp End */
