@@ -674,6 +674,10 @@ button {
 }
 
 @media screen and (max-width: 1380px) {
+  .swiper-slide p {
+    font-size: 14px;
+  }
+
   .gallary .grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
   }
@@ -682,8 +686,14 @@ button {
     height: 200px;
   }
 
-  .swiper-slide p {
-    font-size: 14px;
+  .certified .creds {
+    left: 15%;
+  }
+  .cred {
+    font-size: 18px;
+    line-height: 2.5;
+    padding: 5px 25px;
+    margin-right: 15px;
   }
 
   .footer{
@@ -706,6 +716,25 @@ button {
   .auntyinfo .auntyinfoleft h3{
     top: 80%;
   }
+  
+  .extrainfo .extrainfoleft .extraimg {
+    width: 300px;
+    height: 300px;
+  }
+  .extrainfo .extrainfoleft .bigcircle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .certified .creds {
+    left: 10%;
+  }
+  .cred {
+    line-height: 2.2;
+    padding: 5px 20px;
+    margin-right: 10px;
+  }
+
 }
 
 @media screen and (max-width: 1210px) {
@@ -719,9 +748,36 @@ button {
   .swiper-slide p {
     width: 85%;
   }
+
+  .extrainfo .extrainforight p{
+    font-size: 18px;
+  }
+
+  .cred {
+    font-size: 16px;
+  }
+
 }
 
 @media screen and (max-width: 1195px) {
+  .extrainfo .extrainfoleft .smallcircle {
+    top: 25%;
+    left: 20%;
+  }
+  
+  .extrainfo .extrainfoleft .extraimg {
+    top: 10%;
+    left: 21%;
+  }
+  .extrainfo .extrainfoleft .bigcircle {
+    top: 30%;
+    left: 30%;
+  }
+
+  .certified .creds {
+    left: 10%;
+  }
+
   .gallary .grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
   }
@@ -769,6 +825,10 @@ button {
     left: 35%;
   }
 
+  .certified .creds {
+    left: 8%;
+  }
+
   .gallary .title::before{
     width: 180px;
     left: -180%;
@@ -788,6 +848,12 @@ button {
   }
   .auntyinfo .auntyinfoleft h3{
     font-size: 18px;
+  }
+
+  .cred {
+    font-size: 14px;
+    line-height: 2.2;
+    padding: 5px 20px;
   }
   
   .gallary .grid {
@@ -831,6 +897,37 @@ button {
     top: 20px;
   }
 
+  .certified{
+    height: 80vh;
+    margin-top: 2%;
+  }
+  .certified .info {
+    font-size: 32px;
+    left: 40%;
+  }
+  .certified .info::before {
+    width: 200px;
+    left: -130%;
+  }
+  .certified .info::after {
+    width: 200px;
+    left: 120%;
+  }  
+  .certified .creds{
+    width: 60%;
+    top: 30%;
+    margin-left: 18%;
+  }
+  .certified .creds br{
+    display: none;
+  }
+  .cred{
+    width: 480px;
+    height: 50px;
+    text-align: center;
+    margin-top: 5%;
+  }
+
   .auntyinfo .auntyinfoleft h3{
     top: 85%;
   }
@@ -838,19 +935,37 @@ button {
     top: 25%;
     left: 24%;
   }
-  
   .auntyinfo .auntyinforight .auntyimg {
     width: 280px;
     height: 280px;
     top: 10%;
     left: 25%;
   }
-  
   .auntyinfo .auntyinforight .bigcircle {
     width: 240px;
     height: 240px;
     top: 24%;
     left: 33%;
+  }
+
+  .extrainfo .extrainfoleft .smallcircle {
+    top: 25%;
+    left: 15%;
+  }
+  .extrainfo .extrainfoleft .extraimg {
+    width: 275px;
+    height: 275px;
+    top: 10%;
+    left: 16%;
+  }
+  .extrainfo .extrainfoleft .bigcircle {
+    width: 225px;
+    height: 225px;
+    top: 25%;
+    left: 30%;
+  }
+  .extrainfo .extrainforight p{
+    font-size: 16px;
   }
 
   .footer{
@@ -892,6 +1007,10 @@ button {
   }
   .auntyinfo .auntyinforight{
     height: 60vh;
+  }
+
+  .extrainfo .extrainforight{
+    height: 35vh;
   }
 
   .footer {
@@ -963,10 +1082,26 @@ button {
     top: 35%;
     left: 30%;
   }
+
+  .extrainfo .extrainfoleft .smallcircle {
+    top: 25%;
+    left: 10%;
+  }
+  .extrainfo .extrainfoleft .extraimg {
+    width: 225px;
+    height: 225px;
+    top: 15%;
+    left: 15%;
+  }
+  .extrainfo .extrainfoleft .bigcircle {
+    width: 175px;
+    height: 175px;
+    top: 30%;
+    left: 30%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
   .bannertext{
     font-size: 32px;
     left: 25%;
@@ -1001,6 +1136,18 @@ button {
   .swiper-slide .userinfo {
     top: 30px;
     left: 10%;
+  }
+
+  .certified .info::before {
+    width: 160px;
+    left: -110%;
+  }
+  .certified .info::after {
+    width: 160px;
+    left: 120%;
+  }  
+  .certified .creds{
+    margin-left: 12%;
   }
   
   .gallary .title{
@@ -1069,6 +1216,17 @@ button {
     left: 35%;
   }
 
+  .certified .info {
+    font-size: 28px;
+    left: 35%;
+  }
+  .certified .info::before {
+    left: -120%;
+  }
+  .certified .creds{
+    margin-left: 5%;
+  }
+
   .gallary .title::before{
     width: 150px;
     left: -140%;
@@ -1106,6 +1264,56 @@ button {
     top: 90%;
   }
 
+  .extrainfo{
+    flex-direction: column;
+  }
+  .extrainfo .extrainfoleft{
+    margin-left: 25%;
+  }
+  .extrainfo .extrainfoleft .smallcircle {
+    top: 20%;
+    left: 10%;
+  }
+  .extrainfo .extrainfoleft .extraimg {
+    width: 250px;
+    height: 250px;
+    top: 15%;
+    left: 15%;
+  }
+  .extrainfo .extrainfoleft .bigcircle {
+    width: 200px;
+    height: 200px;
+    top: 35%;
+    left: 35%;
+  }
+  .extrainfo .extrainforight{
+    width: 80%;
+    margin-left: 20%;
+  }
+  .extrainfo .extrainforight p{
+    font-size: 15px;
+    top: 15%;
+  }
+  .extrainfo .extrainforight p::after {
+    right: -50px;
+  }
+
+  .certified .info::before {
+    width: 120px;
+    left: -100%;
+  }
+  .certified .info::after {
+    width: 120px;
+  }
+  .cred{
+    width: 400px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 2;
+    padding: 5px 15px;
+    margin-right: 5px;    
+  }
+
   .gallary .grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
   }
@@ -1135,6 +1343,20 @@ button {
   }
   .auntyinfo .auntyinfoleft h3{
     font-size: 16px;
+  }
+  .auntyinfo .auntyinforight{
+    margin-left: 20%;
+  }
+
+  .extrainfo .extrainfoleft{
+    margin-left: 20%;
+  }
+
+  .certified .info{
+    font-size: 24px;
+  }
+  .certified .creds{
+    margin-left: 3%;
   }
 
   .gallary .title{
@@ -1203,6 +1425,20 @@ button {
     height: 65vh;
   }
 
+  .certified{
+    height: 70vh;
+  }
+  .certified .info::before{
+    width: 80px;
+    left: -80%;
+  }
+  .certified .info::after{
+    width: 80px;
+  }
+  .certified .creds{
+    margin-left: 0;
+  }
+
   .gallary .title::before{
     width: 150px;
   }
@@ -1230,6 +1466,22 @@ button {
 @media screen and (max-width: 450px) {
   .bannertext{
     left: 12%;
+  }
+
+  .auntyinfo .auntyinforight{
+    margin-left: 15%;
+  }
+
+  .extrainfo .extrainfoleft{
+    margin-left: 15%;
+  }
+
+  .certified .creds{
+    margin-left: 5%;
+  }
+  .cred{
+    width: 300px;
+    height: 60px;
   }
 
   .gallary{
@@ -1270,6 +1522,20 @@ button {
     top: 85%;
   }
 
+  .certified .info{
+    font-size: 22px;
+  }
+  .certified .info::before{
+    width: 60px;
+    left: -60%;
+  }
+  .certified .info::after{
+    width: 60px;
+  }
+  .certified .creds{
+    margin-left: 2%;
+  }
+
   .gallary .title{
     font-size: 24px;
     left: 40%;
@@ -1297,7 +1563,11 @@ button {
   }
 
   .auntyinfo .auntyinforight{
-    margin-left: 20%;
+    margin-left: 10%;
+  }
+
+  .extrainfo .extrainfoleft{
+    margin-left: 10%;
   }
 
   .gallary{
@@ -1322,15 +1592,6 @@ button {
   .whats {
     display: none;
   }
-
-  .certified {
-    display: none;
-  }
-
-  .extrainfo {
-    display: none;
-  }
-
 }
 
 /* Temp End */
